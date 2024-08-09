@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fl0ydsg</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <section id="home">
+        <div class="landing">
+            <h1 id="typewrite"></h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>about me</h2>
+        <p>video editor, speciality in motion graphics</p>
+        <p>former c++, javascript developer</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>video portfolio</h2>
+        <div class="grid-container">
+            <div class="video-item">
+                <h3 onclick="openModal('videos/ra6 intro.mp4')">retard adventures 6</h3>
+                <div class="thumbnails">
+                    <img src="stills/ra6/ra6 one.png"  onclick="openThumbnailModal('stills/ra6/ra6 one.png')">
+                    <img src="stills/ra6/ra6 two.png"  onclick="openThumbnailModal('stills/ra6/ra6 two.png')">
+                    <img src="stills/ra6/ra6 three.png"  onclick="openThumbnailModal('stills/ra6/ra6 three.png')">
+                    <img src="stills/ra6/ra6 four.png"  onclick="openThumbnailModal('stills/ra6/ra6 four.png')">
+                    <img src="stills/ra6/ra6 five.png"  onclick="openThumbnailModal('stills/ra6/ra6 five.png')">
+
+                </div>
+            </div>
+            <div class="video-item">
+                <h3 onclick="openModal('videos/ra7 intro.mp4')">retard adventures 7</h3>
+                <div class="thumbnails">
+                    <img src="stills/ra7/ra7 one.png"  onclick="openThumbnailModal('stills/ra7/ra7 one.png')">
+                    <img src="stills/ra7/ra7 two.png"  onclick="openThumbnailModal('stills/ra7/ra7 two.png')">
+                    <img src="stills/ra7/ra7 three.png"  onclick="openThumbnailModal('stills/ra7/ra7 three.png')">
+                    <img src="stills/ra7/ra7 four.png"  onclick="openThumbnailModal('stills/ra7/ra7 four.png')">
+
+                </div>
+            </div>
+            <div class="video-item">
+                <h3 onclick="openModal('videos/ra8 intro.mp4')">retard adventures 8</h3>
+                <div class="thumbnails">
+                    <img src="stills/ra8/ra8 one.png"  onclick="openThumbnailModal('stills/ra8/ra8 one.png')">
+                    <img src="stills/ra8/ra8 two.png"  onclick="openThumbnailModal('stills/ra8/ra8 two.png')">
+                    <img src="stills/ra8/ra8 three.png"  onclick="openThumbnailModal('stills/ra8/ra8 three.png')">
+                    <img src="stills/ra8/ra8 four.png"  onclick="openThumbnailModal('stills/ra8/ra8 four.png')">
+                    <img src="stills/ra8/ra8 five.png"  onclick="openThumbnailModal('stills/ra8/ra8 five.png')">
+
+                </div>
+            </div>
+            <div class="video-item">
+                <h3 onclick="openModal('videos/mmp.mp4')">milady maker party</h3>
+                <div class="thumbnails">
+                    <img src="stills/mmp.png"  onclick="openThumbnailModal('stills/mmp.png')">
+
+                </div>
+            </div>
+            <div class="video-item">
+                <h3 onclick="openModal('videos/b0xxy.mp4')">boxxyonsol</h3>
+                <div class="thumbnails">
+                    <img src="stills/boxxy/boxxy one.png"  onclick="openThumbnailModal('stills/boxxy/boxxy one.png')">
+                    <img src="stills/boxxy/boxxy two.png"  onclick="openThumbnailModal('stills/boxxy/boxxy two.png')">
+                    <img src="stills/boxxy/boxxy three.png"  onclick="openThumbnailModal('stills/boxxy/boxxy three.png')">
+                    <img src="stills/boxxy/boxxy four.png"  onclick="openThumbnailModal('stills/boxxy/boxxy four.png')">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div>
+                <h3><a href="https://twitter.com/fl0ydsg" target="_blank" rel="noopener noreferrer">twitter</a></h3>
+                <p><a href="https://twitter.com/fl0ydsg" target="_blank" rel="noopener noreferrer">@fl0ydsg</a></p>
+            </div>
+            <div>
+                <h3><a href="https://t.me/fl0ydsg" target="_blank" rel="noopener noreferrer">telegram</a></h3>
+                <p><a href="https://t.me/fl0ydsg" target="_blank" rel="noopener noreferrer">@fl0ydsg</a></p>
+            </div>
+            <div>
+                <h3><a href="https://youtube.com/@fl0ydsg" target="_blank" rel="noopener noreferrer">youtube</a></h3>
+                <p><a href="https://youtube.com/@fl0ydsg" target="_blank" rel="noopener noreferrer">youtube.com/@fl0ydsg</a></p>
+            </div>
+            <div>
+                <h3><a href="mailto:main@fl0yd.sg">email</a></h3>
+                <p><a href="mailto:main@fl0yd.sg">main@fl0yd.sg</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>immerse your soul in love...</p>
+    </footer>
+    <div id="videoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <video id="modalVideo" controls></video>
+    </div>
+    <div id="thumbnailModal" class="modal">
+        <span class="close" onclick="closeThumbnailModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+</body>
+</html>
